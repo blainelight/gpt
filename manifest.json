@@ -1,16 +1,15 @@
 {
-    "manifest_version": 3,
-    "name": "Jarvis",
-    "version": "1.0",
-    "permissions": ["activeTab", "storage", "declarativeContent", "microphone"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "Jarvis",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage", "declarativeContent"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
